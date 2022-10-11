@@ -1,8 +1,6 @@
-import 'package:flutter_custom_tabs/flutter_custom_tabs.dart';
-
 import 'package:news/feature/home/data/model/list_news_model.dart';
+import 'package:news/feature/home/view/widgets/custom_web_view.dart';
 import 'package:news/feature/home/view_model/theme.dart';
-
 import '../../../../core/_core_exports.dart';
 
 class TopHeadlineDetailsPage extends StatelessWidget {
@@ -13,16 +11,6 @@ class TopHeadlineDetailsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Provider.of<ThemeNotifier>(context);
-    void _launchURL() async {
-      try {
-        await launch(
-          article.url,
-        );
-      } catch (e) {
-        debugPrint(e.toString());
-      }
-    }
-
     return Scaffold(
       appBar: AppBar(
           title: SvgPicture.asset(
@@ -59,12 +47,17 @@ class TopHeadlineDetailsPage extends StatelessWidget {
               height: 8,
             ),
             GestureDetector(
-              onTap: () => _launchURL(),
+              onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => CustomWebview(url: article.url),
+                ),
+              ),
               child: Container(
                 width: double.infinity,
                 height: 50,
                 decoration: BoxDecoration(
-                    color: Color.fromARGB(255, 42, 119, 196),
+                    color: const Color.fromARGB(255, 42, 119, 196),
                     borderRadius: BorderRadius.circular(16)),
                 child: const Center(
                     child: Text(
