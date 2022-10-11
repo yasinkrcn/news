@@ -1,0 +1,1 @@
+export 'detailed_news_page.dart';
