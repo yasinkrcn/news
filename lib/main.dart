@@ -5,7 +5,6 @@ import 'package:news/feature/home/view_model/theme.dart';
 import 'package:provider/provider.dart';
 import '/core/init/injection_container.dart' as sl;
 import 'package:flutter/material.dart';
-
 import 'package:timeago/timeago.dart' as timeago;
 import 'core/constants/main_provider_list.dart';
 import 'core/utils/route/router.dart';
