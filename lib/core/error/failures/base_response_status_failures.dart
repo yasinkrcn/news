@@ -70,7 +70,7 @@ Failure getFailureByDioErrors(final DioError error) {
     case DioErrorType.receiveTimeout:
       return GatewayTimeOutFailure();
     case DioErrorType.response:
-      throw UnimplementedError(); //? failure dönmüyor?
+      throw UnimplementedError(); 
     case DioErrorType.cancel:
       return RequestCancelledFailure(error.error);
     case DioErrorType.other:
