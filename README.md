@@ -2,7 +2,7 @@
 
 Newsapi is used in the news application
 
-# apk
+
 
 ## Getting Started
 
