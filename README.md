@@ -4,7 +4,7 @@ Newsapi is used in the news application
 
 
 
-## Screenshots
+# Screenshots
 
 
 ![1](https://user-images.githubusercontent.com/57758337/195432346-5791d133-1d59-4aad-b527-5383df83b6f8.png)
