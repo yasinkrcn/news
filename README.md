@@ -1,6 +1,7 @@
 # news
 
-Newsapi is used in the news application
+News api is used.
+https://newsapi.org/
 
 
 
