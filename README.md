@@ -1,6 +1,6 @@
 # news
 
-News api is used.
+News api used in this project.
 https://newsapi.org/
 
 
