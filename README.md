@@ -42,16 +42,15 @@ A Flutter-based news application that fetches news from [News API](https://newsa
 - Connectivity Plus
 - Shared Preferences
 - Shimmer Loading Animation
-- TimeAgo for Relative Timestamps
 
 ## 📥 Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yasinkrcn/news_app.git
+   git clone https://github.com/yasinkrcn/news.git
    ```
 2. Navigate to the project directory:
    ```sh
-   cd news_app
+   cd news
    ```
 3. Install dependencies:
    ```sh
